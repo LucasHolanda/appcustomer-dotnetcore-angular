@@ -17,15 +17,15 @@
 - Run `ng serve` to run the web application at `http://localhost:4200/`
 
 ### Application Users for testing
-**User <b>Administrator</b> with user role <i>Administrator</i>**
+**Administrator user with role <i>Administrator</i>**
  - Login: Administrator
  - Password: admin123
  
-**User <b>Seller 1</b> with user role <i>Seller</i>**
+**Seller 1 user with role <i>Seller</i>**
  - Login: Seller1
  - Password: seller1123
  
-**User <b>Seller 2</b> with user role <i>Seller</i>**
+**Seller 2 user with role <i>Seller</i>**
  - Login: Seller2
  - Password: seller2123
 
