@@ -2,10 +2,10 @@
 
 ## How to use:
 
-* Database
+### Database
 - Enable `sa` user in the database and set password according to <b>appsettings.json</b> file located in the project folder at <b>CustomerApp-BackEnd/1 - Services/ProjectCoreDDD.API</b>
 
-* API
+### API
 - Find the project folder at <b>CustomerApp-BackEnd/1 - Services/ProjectCoreDDD.API/</b>
 - Run `dotnet restore`
 - Run `dotnet run` to run the API at `http://localhost:5000/`
