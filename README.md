@@ -18,16 +18,16 @@
 
 ### Application Users for testing
 - User <b>Administrator</b> with user role <i>Administrator</i>
- - Login: Administrator
- - Password: admin123
+ -- Login: Administrator
+ -- Password: admin123
  
 - User <b>Seller 1</b> with user role <i>Seller</i>
- - Login: Seller1
- - Password: seller1123
+ -- Login: Seller1
+ -- Password: seller1123
  
 - User <b>Seller 2</b> with user role <i>Seller</i>
- - Login: Seller2
- - Password: seller2123
+ -- Login: Seller2
+ -- Password: seller2123
 
 
 ## Technologies implemented:
