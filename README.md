@@ -1,4 +1,4 @@
-# appcustomer-dotnetcore-angular
+# Customer Management App
 
 ## How to use:
 
