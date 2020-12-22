@@ -1,0 +1,59 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+.vscode
+.vscode/*
+
+# compiled output
+CustomerApp-FrontEnd/dist
+CustomerApp-FrontEnd/tmp
+CustomerApp-FrontEnd/out-tsc
+# Only exists if Bazel was run
+CustomerApp-FrontEnd/bazel-out
+
+# dependencies
+CustomerApp-FrontEnd/node_modules
+
+# profiling files
+CustomerApp-FrontEnd/chrome-profiler-events*.json
+CustomerApp-FrontEnd/speed-measure-plugin*.json
+
+# IDEs and editors
+CustomerApp-FrontEnd/.idea
+CustomerApp-FrontEnd/.project
+CustomerApp-FrontEnd/.classpath
+CustomerApp-FrontEnd/.c9/
+CustomerApp-FrontEnd/*.launch
+CustomerApp-FrontEnd/.settings/
+CustomerApp-FrontEnd/*.sublime-workspace
+
+# IDE - VSCode
+CustomerApp-FrontEnd/.vscode/*
+CustomerApp-FrontEnd/!.vscode/settings.json
+CustomerApp-FrontEnd/!.vscode/tasks.json
+CustomerApp-FrontEnd/!.vscode/launch.json
+CustomerApp-FrontEnd/!.vscode/extensions.json
+CustomerApp-FrontEnd/.history/*
+
+# misc
+CustomerApp-FrontEnd/.sass-cache
+CustomerApp-FrontEnd/connect.lock
+CustomerApp-FrontEnd/coverage
+CustomerApp-FrontEnd/libpeerconnection.log
+CustomerApp-FrontEnd/npm-debug.log
+CustomerApp-FrontEnd/yarn-error.log
+CustomerApp-FrontEnd/testem.log
+CustomerApp-FrontEnd/typings
+
+# System Files
+CustomerApp-FrontEnd/.DS_Store
+CustomerApp-FrontEnd/Thumbs.db
+
+CustomerApp-FrontEnd/README.md
+
+CustomerApp-BackEnd/.vscode
+CustomerApp-BackEnd/.vscode/*
+CustomerApp-BackEnd/.vs
+CustomerApp-BackEnd/bin/
+CustomerApp-BackEnd/obj/
+CustomerApp-BackEnd/*.user
+CustomerApp-BackEnd/README.md

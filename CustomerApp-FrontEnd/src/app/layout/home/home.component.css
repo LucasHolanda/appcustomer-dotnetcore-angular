@@ -1,0 +1,12 @@
+header {
+  height: 70px;
+}
+
+#container-master {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.nav-item:hover{
+  background-color:#d0e7ff;
+}

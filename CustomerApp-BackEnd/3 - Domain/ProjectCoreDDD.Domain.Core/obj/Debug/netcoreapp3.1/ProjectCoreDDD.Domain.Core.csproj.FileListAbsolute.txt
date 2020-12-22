@@ -1,0 +1,12 @@
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.deps.json
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.dll
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.pdb
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.dll
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.pdb
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.csprojAssemblyReference.cache
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.AssemblyInfoInputs.cache
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.AssemblyInfo.cs
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.csproj.CoreCompileInputs.cache
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.csproj.CopyComplete
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.dll
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\3 - Domain\ProjectCoreDDD.Domain.Core\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.pdb

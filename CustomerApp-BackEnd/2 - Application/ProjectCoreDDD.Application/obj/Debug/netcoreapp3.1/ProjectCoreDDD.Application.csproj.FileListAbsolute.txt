@@ -1,0 +1,14 @@
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Application.deps.json
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Application.dll
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Application.pdb
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.dll
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.dll
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.Core.pdb
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\bin\Debug\netcoreapp3.1\ProjectCoreDDD.Domain.pdb
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Application.csprojAssemblyReference.cache
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Application.AssemblyInfoInputs.cache
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Application.AssemblyInfo.cs
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Application.csproj.CoreCompileInputs.cache
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Application.csproj.CopyComplete
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Application.dll
+D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\2 - Application\ProjectCoreDDD.Application\obj\Debug\netcoreapp3.1\ProjectCoreDDD.Application.pdb

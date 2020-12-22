@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "vTHu80SXVQqVggss2/gj+JOI0h03zD0LqpNFQlp161SJjYzBKsdSXnSg+bmEhuJmwgTo/CBnlsS5Ok5oFPklrw==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\LUCAS\\Dev\\Projects\\vscode-netcore-DDD\\2 - Application\\ProjectCoreDDD.Application\\ProjectCoreDDD.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Luckas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Luckas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Luckas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Luckas\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

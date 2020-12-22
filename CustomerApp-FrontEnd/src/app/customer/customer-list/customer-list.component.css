@@ -1,0 +1,17 @@
+#customer-list{
+    padding: 20px 35px;
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: rgb(0 0 0 / 4%);
+    border-color: #dedede;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f7f7f7;
+}
+
+.has-value {
+    border-color: #007bff;
+}

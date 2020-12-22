@@ -1,0 +1,45 @@
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center"><img
+        src="{{user.userRoleId == 1 ? imgAdmin : imgSeller }}" alt="..." width="65"
+        class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="m-0">{{user.login}}</h4>
+        <small class="font-weight-light text-muted mb-0">{{user.email}}</small>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+      <a [routerLink]="['/']" class="nav-link text-dark font-italic">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Customers
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic" (click)="logout()">
+        <i class="fa fa-sign-out mr-3 text-primary fa-fw"></i>
+        Logout
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- End vertical navbar -->
+
+
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
+  <section>
+    <main class="" id="container-master">
+      <router-outlet></router-outlet>
+    </main>
+  </section>
+</div>
+<!-- End demo content -->
+
+<footer class="mt-2 p-2 text-center">
+</footer>

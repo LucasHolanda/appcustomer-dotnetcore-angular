@@ -1,0 +1,23 @@
+<h2 class="text-center">Sing in</h2>
+
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+
+  <div class="alert alert-danger" *ngIf="loginError" role="alert">
+    <i class="fa fa-exclamation mr-3 fa-fw"></i>{{loginErrorMessage}}
+  </div>
+  <div class="alert alert-success" *ngIf="loginSuccess" role="alert">
+    <i class="fa fa-check mr-3 fa-fw"></i>User logged. Redirecting <i class="fa fa-spinner mr-3 fa-fw  fa-spin"></i>
+  </div>
+  <div class="form-group">
+    <label>Login</label>
+    <input class="form-control" type="login" name="login" id="login" [(ngModel)]="user.login" required />
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input class="form-control" type="password" name="password" id="password" [(ngModel)]="user.password" required />
+  </div>
+  <button type="submit" class="btn btn-primary btn-block" [disabled]="f.form.invalid || loggingIn">
+    <span *ngIf="!loggingIn"><i class="fa fa-sign mr-3 fa-fw"></i>Log in</span>
+    <span *ngIf="loggingIn"><i class="fa fa-spinner mr-3 fa-fw  fa-spin"></i>Logging in</span>
+  </button>
+</form>

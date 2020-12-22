@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\2 - Application\ProjectCoreDDD.Application\ProjectCoreDDD.Application.csproj" />
+    <ProjectReference Include="..\..\3 - Domain\ProjectCoreDDD.Domain.Core\ProjectCoreDDD.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\3 - Domain\ProjectCoreDDD.Domain.Services\ProjectCoreDDD.Domain.Services.csproj" />
+    <ProjectReference Include="..\..\3 - Domain\ProjectCoreDDD.Domain\ProjectCoreDDD.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
