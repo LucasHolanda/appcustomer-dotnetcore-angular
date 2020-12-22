@@ -16,6 +16,20 @@
 - Run `npm install` to install all project packages
 - Run `ng serve` to run the web application at `http://localhost:4200/`
 
+### Application Users for testing
+- User <b>Administrator</b> with user role <i>Administrator</i>
+ - Login: Administrator
+ - Password: admin123
+ 
+- User <b>Seller 1</b> with user role <i>Seller</i>
+ - Login: Seller1
+ - Password: seller1123
+ 
+- User <b>Seller 2</b> with user role <i>Seller</i>
+ - Login: Seller2
+ - Password: seller2123
+
+
 ## Technologies implemented:
 
 - ASP.NET Core 3.1 (with .NET Core 3.1)
