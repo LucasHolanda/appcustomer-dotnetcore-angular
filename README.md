@@ -1,4 +1,4 @@
-# Customer Management App
+# Customer Management Application
 
 ## How to use:
 
