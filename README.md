@@ -11,8 +11,8 @@
 - Run `dotnet run` to run the API at `http://localhost:5000/`
 
 ### Web Application 
-- Run `npm install -g @angular/cli`
 - Find the project folder at <b>CustomerApp-FrontEnd</b>
+- Run `npm install -g @angular/cli`
 - Run `npm install` to install all project packages
 - Run `ng serve` to run the web application at `http://localhost:4200/`
 
