@@ -35,8 +35,8 @@
 - .NET Core 3.1
  - .NET WebApi Core with JWT Bearer Authentication
  - .NET Identity Core
+ - .NET Core Native DI
 - Entity Framework Core 3.1
-- .NET Core Native DI
 - AutoMapper
 - FluentValidator
 - Angular 11
