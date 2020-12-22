@@ -1,10 +1,10 @@
 # appcustomer-dotnetcore-angular
 
 ### Banco de Dados
-- Habilitar usuario `sa` no banco de dados e configurar senha de acordo com arquivo <b>appsettings.json</b> localizado pasta do projeto <b>CustomerApp-BackEnd/1 - Services/ProjectCoreDDD.API</b> 
+- Habilitar usuario `sa` no banco de dados e configurar senha de acordo com arquivo <b>appsettings.json</b> localizado na pasta do projeto em <b>CustomerApp-BackEnd/1 - Services/ProjectCoreDDD.API</b> 
 
 ### Back-End .NET Core 3.1
-- Localizar pasta do projeto <b>CustomerApp-BackEnd/1 - Services/ProjectCoreDDD.API/</b>
+- Localizar pasta do projeto em <b>CustomerApp-BackEnd/1 - Services/ProjectCoreDDD.API/</b>
 - Executar no terminal `dotnet restore`
 - Executar no terminal `dotnet run` para rodar api em `http://localhost:5000/`
 
