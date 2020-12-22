@@ -32,9 +32,9 @@
 
 ## Technologies implemented:
 
-- ASP.NET Core 3.1 (with .NET Core 3.1)
- - ASP.NET WebApi Core with JWT Bearer Authentication
- - ASP.NET Identity Core
+- .NET Core 3.1
+ - .NET WebApi Core with JWT Bearer Authentication
+ - .NET Identity Core
 - Entity Framework Core 3.1
 - .NET Core Native DI
 - AutoMapper
