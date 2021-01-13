@@ -1,4 +1,0 @@
-D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\4 - Infra\ProjectCoreDDD.Infra\obj\Debug\netstandard2.1\ProjectCoreDDD.Infra.csprojAssemblyReference.cache
-D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\4 - Infra\ProjectCoreDDD.Infra\obj\Debug\netstandard2.1\ProjectCoreDDD.Infra.AssemblyInfoInputs.cache
-D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\4 - Infra\ProjectCoreDDD.Infra\obj\Debug\netstandard2.1\ProjectCoreDDD.Infra.AssemblyInfo.cs
-D:\Documents\LUCAS\Dev\Projects\vscode-netcore-DDD\4 - Infra\ProjectCoreDDD.Infra\obj\Debug\netstandard2.1\ProjectCoreDDD.Infra.csproj.CoreCompileInputs.cache

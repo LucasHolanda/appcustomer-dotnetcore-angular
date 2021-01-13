@@ -50,10 +50,14 @@ CustomerApp-FrontEnd/Thumbs.db
 
 CustomerApp-FrontEnd/README.md
 
+
+bin/
+obj/
 CustomerApp-BackEnd/.vscode
 CustomerApp-BackEnd/.vscode/*
 CustomerApp-BackEnd/.vs
-CustomerApp-BackEnd/bin/
-CustomerApp-BackEnd/obj/
+CustomerApp-BackEnd/_ReSharper.*
+CustomerApp-BackEnd/packages
 CustomerApp-BackEnd/*.user
 CustomerApp-BackEnd/README.md
+
