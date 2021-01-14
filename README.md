@@ -38,14 +38,13 @@
  - .NET Core Native DI
 - Entity Framework Core 3.1
 - AutoMapper
-- FluentValidator
+- Fluent Validation
 - Angular 11
 
 ## Architecture:
 
 - Full architecture with responsibility separation concerns, SOLID and Clean Code
 - Domain Driven Design (Layers and Domain Model Pattern)
-- Event Sourcing
 - IoC
 - Repository
 
