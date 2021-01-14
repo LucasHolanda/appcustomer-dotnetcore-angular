@@ -48,6 +48,7 @@ CustomerApp-FrontEnd/typings
 CustomerApp-FrontEnd/.DS_Store
 CustomerApp-FrontEnd/Thumbs.db
 
+CustomerApp-FrontEnd/package-lock.json
 CustomerApp-FrontEnd/README.md
 
 bin/

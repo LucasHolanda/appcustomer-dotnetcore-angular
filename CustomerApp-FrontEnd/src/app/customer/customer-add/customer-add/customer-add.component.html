@@ -15,52 +15,67 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Name</label>
-                        <input type="text" formControlName="name" [ngClass]="{'is-invalid': isInvalidForm('name') }"
+                        <input type="text" formControlName="name" [ngClass]="{'is-invalid': displayMessage.name }"
                             class="form-control" placeholder="Enter the name" />
-                        <span class="text-danger" *ngIf="isInvalidForm('name', 'required')">Name is required!</span>
+                        <span class="text-danger" *ngIf="displayMessage.name">
+                            <p [innerHTML]="displayMessage.name"></p>
+                        </span>
                     </div>
+                    <!-- this not using generic validator, using sample way to validate form.
+                        <input type="text" formControlName="phone" celular [textMask]="{mask: MASKS.celular.textMask}"
+                        [ngClass]="{'is-invalid': isInvalidForm('phone') }" class="form-control"
+                        placeholder="Enter the phone" />
+                    <span class="text-danger" *ngIf="isInvalidForm('phone', 'required')">Phone is required!</span>
+                    <span class="text-danger" *ngIf="isInvalidForm('phone', 'celular')">Phone is invalid!</span> -->
                     <div class="form-group col-md-6">
                         <label>Phone</label>
                         <input type="text" formControlName="phone" celular [textMask]="{mask: MASKS.celular.textMask}"
-                            [ngClass]="{'is-invalid': isInvalidForm('phone') }" class="form-control"
+                            [ngClass]="{'is-invalid': displayMessage.phone }" class="form-control"
                             placeholder="Enter the phone" />
-                        <span class="text-danger" *ngIf="isInvalidForm('phone', 'required')">Phone is required!</span>
-                        <span class="text-danger" *ngIf="isInvalidForm('phone', 'celular')">Phone is invalid!</span>
+                        <span class="text-danger" *ngIf="displayMessage.phone">
+                            <p [innerHTML]="displayMessage.phone"></p>
+                        </span>
                     </div>
                     <div class="form-group col-md-6">
                         <label>Gender</label>
                         <select class="form-control" formControlName="genderId"
-                            [ngClass]="{'is-invalid': isInvalidForm('genderId') }">
+                            [ngClass]="{'is-invalid': displayMessage.genderId }">
                             <option [ngValue]="0" selected>Select</option>
                             <option *ngFor="let pnt of genders" [value]="pnt.id">
                                 {{pnt.name}}
                             </option>
                         </select>
-                        <span class="text-danger" *ngIf="isInvalidForm('genderId', 'required')">Gender is required!</span>
+                        <span class="text-danger" *ngIf="displayMessage.genderId">
+                            <p [innerHTML]="displayMessage.genderId"></p>
+                        </span>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Region</label>
                         <select (change)="changeRegion()" formControlName="regionId"
-                            [ngClass]="{'is-invalid': isInvalidForm('regionId') }" class="form-control">
+                            [ngClass]="{'is-invalid': displayMessage.regionId }" class="form-control">
                             <option [ngValue]="0" selected>Select</option>
                             <option *ngFor="let pnt of regions" [value]="pnt.id">
                                 {{pnt.name}}
                             </option>
                         </select>
-                        <span class="text-danger" *ngIf="isInvalidForm('regionId', 'required')">Region is required!</span>
+                        <span class="text-danger" *ngIf="displayMessage.regionId">
+                            <p [innerHTML]="displayMessage.regionId"></p>
+                        </span>
                     </div>
                     <div class="form-group col-md-6">
                         <label>City</label>
                         <select (change)="changeCities()" formControlName="cityId"
-                            [ngClass]="{'is-invalid': isInvalidForm('cityId') }" class="form-control">
+                            [ngClass]="{'is-invalid': displayMessage.cityId }" class="form-control">
                             <option [ngValue]="0" selected>Select</option>
                             <option *ngFor="let pnt of cities" [value]="pnt.id">
                                 {{pnt.name}}
                             </option>
                         </select>
-                        <span class="text-danger" *ngIf="isInvalidForm('cityId', 'required')">City is required!</span>
+                        <span class="text-danger" *ngIf="displayMessage.cityId">
+                            <p [innerHTML]="displayMessage.cityId"></p>
+                        </span>
                     </div>
                 </div>
 
@@ -68,13 +83,15 @@
                     <div class="form-group col-md-6">
                         <label for="classificationId">Classification</label>
                         <select class="form-control" formControlName="classificationId"
-                            [ngClass]="{'is-invalid': isInvalidForm('classificationId') }">
+                            [ngClass]="{'is-invalid': displayMessage.classificationId }">
                             <option [ngValue]="0" selected>Select</option>
                             <option *ngFor="let pnt of classifications" [value]="pnt.id">
                                 {{pnt.name}}
                             </option>
                         </select>
-                        <span class="text-danger" *ngIf="isInvalidForm('classificationId', 'required')">Classification is required!</span>
+                        <span class="text-danger" *ngIf="displayMessage.classificationId">
+                            <p [innerHTML]="displayMessage.classificationId"></p>
+                        </span>
                     </div>
                 </div>
 
