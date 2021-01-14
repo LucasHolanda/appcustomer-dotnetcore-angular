@@ -1,0 +1,91 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page"
+            style="display: flex;justify-content: center;width: 100%;">
+            <h4>New Customer</h4>
+        </li>
+    </ol>
+</nav>
+
+<div class="container-fluid" id="customer-list">
+    <div class="card mb-5">
+        <h5 class="card-header"><i class="fa fa-filter mr-3 text-primary fa-fw"></i>Add a new customer</h5>
+        <div class="card-body">
+            <form id="add-form" novalidate (ngSubmit)="addCustomer()" [formGroup]="customerForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Name</label>
+                        <input type="text" formControlName="name" [ngClass]="{'is-invalid': isInvalidForm('name') }"
+                            class="form-control" placeholder="Enter the name" />
+                        <span class="text-danger" *ngIf="isInvalidForm('name', 'required')">Name is required!</span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Phone</label>
+                        <input type="text" formControlName="phone" celular [textMask]="{mask: MASKS.celular.textMask}"
+                            [ngClass]="{'is-invalid': isInvalidForm('phone') }" class="form-control"
+                            placeholder="Enter the phone" />
+                        <span class="text-danger" *ngIf="isInvalidForm('phone', 'required')">Phone is required!</span>
+                        <span class="text-danger" *ngIf="isInvalidForm('phone', 'celular')">Phone is invalid!</span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Gender</label>
+                        <select class="form-control" formControlName="genderId"
+                            [ngClass]="{'is-invalid': isInvalidForm('genderId') }">
+                            <option [ngValue]="0" selected>Select</option>
+                            <option *ngFor="let pnt of genders" [value]="pnt.id">
+                                {{pnt.name}}
+                            </option>
+                        </select>
+                        <span class="text-danger" *ngIf="isInvalidForm('genderId', 'required')">Gender is required!</span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Region</label>
+                        <select (change)="changeRegion()" formControlName="regionId"
+                            [ngClass]="{'is-invalid': isInvalidForm('regionId') }" class="form-control">
+                            <option [ngValue]="0" selected>Select</option>
+                            <option *ngFor="let pnt of regions" [value]="pnt.id">
+                                {{pnt.name}}
+                            </option>
+                        </select>
+                        <span class="text-danger" *ngIf="isInvalidForm('regionId', 'required')">Region is required!</span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>City</label>
+                        <select (change)="changeCities()" formControlName="cityId"
+                            [ngClass]="{'is-invalid': isInvalidForm('cityId') }" class="form-control">
+                            <option [ngValue]="0" selected>Select</option>
+                            <option *ngFor="let pnt of cities" [value]="pnt.id">
+                                {{pnt.name}}
+                            </option>
+                        </select>
+                        <span class="text-danger" *ngIf="isInvalidForm('cityId', 'required')">City is required!</span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="classificationId">Classification</label>
+                        <select class="form-control" formControlName="classificationId"
+                            [ngClass]="{'is-invalid': isInvalidForm('classificationId') }">
+                            <option [ngValue]="0" selected>Select</option>
+                            <option *ngFor="let pnt of classifications" [value]="pnt.id">
+                                {{pnt.name}}
+                            </option>
+                        </select>
+                        <span class="text-danger" *ngIf="isInvalidForm('classificationId', 'required')">Classification is required!</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary mr-3" [disabled]="isInvalidForm('form')">
+                    <i class="fa fa-search mr-1 fa-fw"></i>Save
+                </button>
+                <button type="button" class="btn btn-warning">
+                    <i class="fa fa-eraser mr-1 fa-fw"></i>Clear Fields
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>

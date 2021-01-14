@@ -80,3 +80,8 @@ body {
 .text-gray {
   color: #aaa;
 }
+
+select.form-control.is-invalid
+, select.was-validated select.form-control:invalid {
+  background-position: center right calc(0.9em + .1875rem)!important;
+}

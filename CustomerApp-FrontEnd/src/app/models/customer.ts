@@ -5,15 +5,15 @@ import { Region } from "./region";
 import { UserSys } from "./user-sys";
 
 export class Customer {
-  id: number = 0;
-  name: String = '';
-  phone: String = '';
-  lastPurchase: Date | undefined;
-  genderId: number = 0;
-  cityId: number = 0;
-  regionId: number = 0;
-  classificationId: number = 0;
-  userId: number = 0;
+  id: number;
+  name: String;
+  phone: String;
+  lastPurchase: Date;
+  genderId: number;
+  cityId: number;
+  regionId: number;
+  classificationId: number;
+  userId: number;
   gender = Gender;
   city = City;
   region = Region;

@@ -7,6 +7,11 @@
 </nav>
 
 <div class="container-fluid" id="customer-list">
+  <a [routerLink]="['/customer/add']" class="btn btn-primary mb-4">
+    <i class="fa fa-plus mr-1 fa-fw"></i>
+    New Customer
+  </a>
+
   <div class="card mb-5">
     <h5 class="card-header"><i class="fa fa-filter mr-3 text-primary fa-fw"></i>Search Customers</h5>
     <div class="card-body">
@@ -14,12 +19,13 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="customerName">Name</label>
-            <input type="text" [(ngModel)]="reqFilter.name" id="customerName" [ngClass]="{'has-value': reqFilter.name }" name="customerName" #model="ngModel"
-              class="form-control" placeholder="Enter the name" />
+            <input type="text" [(ngModel)]="reqFilter.name" id="customerName" [ngClass]="{'has-value': reqFilter.name }"
+              name="customerName" #model="ngModel" class="form-control" placeholder="Enter the name" />
           </div>
           <div class="form-group col-md-6">
             <label for="genderId">Gender</label>
-            <select [(ngModel)]="reqFilter.genderId" class="form-control" [ngClass]="{'has-value': reqFilter.genderId }" id="genderId" name="genderId">
+            <select [(ngModel)]="reqFilter.genderId" class="form-control" [ngClass]="{'has-value': reqFilter.genderId }"
+              id="genderId" name="genderId">
               <option [ngValue]="0" selected>Select</option>
               <option *ngFor="let pnt of genders" [value]="pnt.id">
                 {{pnt.name}}
@@ -30,7 +36,8 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="regionId">Region</label>
-            <select [(ngModel)]="reqFilter.regionId" (change)="changeRegion(reqFilter.regionId)" [ngClass]="{'has-value': reqFilter.regionId }" class="form-control" id="regionId" name="regionId">
+            <select [(ngModel)]="reqFilter.regionId" (change)="changeRegion(reqFilter.regionId)"
+              [ngClass]="{'has-value': reqFilter.regionId }" class="form-control" id="regionId" name="regionId">
               <option [ngValue]="0" selected>Select</option>
               <option *ngFor="let pnt of regions" [value]="pnt.id">
                 {{pnt.name}}
@@ -39,7 +46,8 @@
           </div>
           <div class="form-group col-md-6">
             <label for="cityId">City</label>
-            <select [(ngModel)]="reqFilter.cityId" (change)="changeCities(reqFilter.cityId)" [ngClass]="{'has-value': reqFilter.cityId }" class="form-control" id="cityId" name="cityId">
+            <select [(ngModel)]="reqFilter.cityId" (change)="changeCities(reqFilter.cityId)"
+              [ngClass]="{'has-value': reqFilter.cityId }" class="form-control" id="cityId" name="cityId">
               <option [ngValue]="0" selected>Select</option>
               <option *ngFor="let pnt of cities" [value]="pnt.id">
                 {{pnt.name}}
@@ -51,13 +59,13 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="dateStart">Last Purchase (Starts At)</label>
-            <input type="date" [(ngModel)]="reqFilter.dateStart"  [ngClass]="{'has-value': reqFilter.dateStart }" id="dateStart" name="dateStart" #model="ngModel"
-              class="form-control" placeholder="Enter the date" />
+            <input type="date" [(ngModel)]="reqFilter.dateStart" [ngClass]="{'has-value': reqFilter.dateStart }"
+              id="dateStart" name="dateStart" #model="ngModel" class="form-control" placeholder="Enter the date" />
           </div>
           <div class="form-group col-md-6">
             <label for="dateEnd">Last Purchase (Ends At)</label>
-            <input type="date" [(ngModel)]="reqFilter.dateEnd"  [ngClass]="{'has-value': reqFilter.dateEnd }" id="dateEnd" name="dateEnd" #model="ngModel"
-              class="form-control" placeholder="Enter the date" />
+            <input type="date" [(ngModel)]="reqFilter.dateEnd" [ngClass]="{'has-value': reqFilter.dateEnd }"
+              id="dateEnd" name="dateEnd" #model="ngModel" class="form-control" placeholder="Enter the date" />
           </div>
         </div>
 
@@ -65,7 +73,7 @@
           <div class="form-group col-md-6">
             <label for="classificationId">Classifications</label>
             <select [(ngModel)]="reqFilter.classificationId" class="form-control" id="classificationId"
-              name="classificationId"  [ngClass]="{'has-value': reqFilter.classificationId }">
+              name="classificationId" [ngClass]="{'has-value': reqFilter.classificationId }">
               <option [ngValue]="0" selected>Select</option>
               <option *ngFor="let pnt of classifications" [value]="pnt.id">
                 {{pnt.name}}
@@ -75,7 +83,8 @@
           <!-- Only Administrator -->
           <div class="form-group col-md-6" *ngIf="user.userRoleId == 1">
             <label for="userId">Sellers</label>
-            <select [(ngModel)]="reqFilter.userId" class="form-control" id="userId" name="userId" [ngClass]="{'has-value': reqFilter.userId }">
+            <select [(ngModel)]="reqFilter.userId" class="form-control" id="userId" name="userId"
+              [ngClass]="{'has-value': reqFilter.userId }">
               <option [ngValue]="0" selected>Select</option>
               <option *ngFor="let pnt of usersSellers" [value]="pnt.id">
                 {{pnt.login}}
@@ -85,7 +94,8 @@
         </div>
 
         <button type="submit" class="btn btn-primary mr-3"><i class="fa fa-search mr-1 fa-fw"></i>Search</button>
-        <button type="submit" class="btn btn-warning"(click)="cleanForm(f)"><i class="fa fa-eraser mr-1 fa-fw"></i>Clear Fields</button>
+        <button type="button" class="btn btn-warning" (click)="cleanForm(f)"><i
+            class="fa fa-eraser mr-1 fa-fw"></i>Clear Fields</button>
       </form>
     </div>
   </div>
@@ -112,7 +122,8 @@
               <td colspan="10" style="padding: 15px;"><i class="fa fa-spinner fa-spin mr-1 fa-fw"></i>Loading...</td>
             </tr>
             <tr *ngIf="!customers.length && !loadingCustomers" class="table-warning text-center">
-              <td colspan="10" style="padding: 15px;"><i class="fa fa-exclamation mr-1 fa-fw"></i>No customers were found for this filter.</td>
+              <td colspan="10" style="padding: 15px;"><i class="fa fa-exclamation mr-1 fa-fw"></i>No customers were
+                found for this filter.</td>
             </tr>
             <tr *ngFor="let cc of customers">
               <td>{{cc.classification.name}}</td>

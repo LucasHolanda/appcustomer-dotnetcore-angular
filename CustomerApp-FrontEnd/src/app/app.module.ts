@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,8 @@ import { HomeComponent } from './layout/home/home.component';
 
 import { httpInterceptorProviders } from './http-interceptors';
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
+import { CustomerAddComponent } from './customer/customer-add/customer-add/customer-add.component';
+import { NgBrazil, TextMask } from 'ng-brazil';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,16 @@ import { CustomerListComponent } from './customer/customer-list/customer-list.co
     LoginComponent,
     AuthenticationComponent,
     HomeComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    CustomerAddComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
+    NgBrazil,
+    TextMask.TextMaskModule,
     AppRoutingModule
   ],
   providers: [
