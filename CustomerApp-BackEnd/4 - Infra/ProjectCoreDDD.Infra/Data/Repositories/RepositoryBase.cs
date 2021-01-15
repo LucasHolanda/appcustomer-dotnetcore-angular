@@ -34,7 +34,7 @@ namespace ProjectCoreDDD.Infra.Data.Repositories
         {
             try
             {
-                return await DbSet.ToListAsync();
+                return await DbSet.AsNoTracking().ToListAsync();
             }
             catch (Exception ex)
             {
