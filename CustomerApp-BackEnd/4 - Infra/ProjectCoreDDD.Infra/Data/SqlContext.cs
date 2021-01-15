@@ -14,7 +14,8 @@ namespace ProjectCoreDDD.Infra.Data
 
         public SqlContext(DbContextOptions<SqlContext> options) : base(options)
         {
-            Database.Migrate();
+            if (Database.GetPendingMigrations().Any())
+                Database.Migrate();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

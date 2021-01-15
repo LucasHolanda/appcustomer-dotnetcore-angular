@@ -15,7 +15,12 @@ namespace ProjectCoreDDD.API.Configurations
             services.AddDbContext<SqlContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("ProjectCoreDDD.Infra"));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
+                p => p.EnableRetryOnFailure(maxRetryCount: 2, maxRetryDelay: TimeSpan.FromSeconds(5), errorNumbersToAdd: null)
+                                            //.MigrationsHistoryTable("nome_tabela_migrations")
+                                            );
+
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"), p => p.MigrationsAssembly("ProjectCoreDDD.Infra"));
             });
         }
     }

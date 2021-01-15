@@ -51,7 +51,8 @@ namespace ProjectCoreDDD.Infra.Data.Repositories
         {
             try
             {
-                DbSet.Remove(entity);
+                //DbSet.Remove(entity);
+                sqlContext.Entry(entity).State = EntityState.Deleted;                
                 sqlContext.SaveChanges();
             }
             catch (Exception ex)
