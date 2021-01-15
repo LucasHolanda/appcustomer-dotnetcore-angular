@@ -11,10 +11,13 @@ namespace ProjectCoreDDD.Infra.Data.Configuration
             builder.ToTable("UserSys", "dbo").HasKey(t => t.Id);
 
             builder.Property(t => t.Id).IsRequired(true);
-            builder.Property(t => t.Login).IsRequired(true);
-            builder.Property(t => t.Email).IsRequired(true);
-            builder.Property(t => t.Password).IsRequired(true);
+            builder.Property(t => t.Login).HasMaxLength(20).IsRequired(true);
+            builder.Property(t => t.Email).HasMaxLength(50).IsRequired(true);
+            builder.Property(t => t.Password).HasMaxLength(15).IsRequired(true);
             builder.Property(t => t.UserRoleId).IsRequired(true);
+
+            builder.HasIndex(t => t.Login).HasName("idx_usersys_login");
+            builder.HasIndex(t => t.Email).HasName("idx_usersys_email");
 
             builder.HasOne(t => t.UserRole);
 

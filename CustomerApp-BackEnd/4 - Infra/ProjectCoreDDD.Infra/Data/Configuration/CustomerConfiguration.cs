@@ -11,8 +11,8 @@ namespace ProjectCoreDDD.Infra.Data.Configuration
             builder.ToTable("Customer", "dbo").HasKey(t => t.Id);
 
             builder.Property(t => t.Id).IsRequired(true);
-            builder.Property(t => t.Name).IsRequired(true);
-            builder.Property(t => t.Phone).IsRequired(true);
+            builder.Property(t => t.Name).HasMaxLength(100).IsRequired(true);
+            builder.Property(t => t.Phone).HasMaxLength(11).IsRequired(true);
             builder.Property(t => t.GenderId).IsRequired(true);
             builder.Property(t => t.CityId).IsRequired(true);
             builder.Property(t => t.RegionId).IsRequired(true);
@@ -20,12 +20,13 @@ namespace ProjectCoreDDD.Infra.Data.Configuration
             builder.Property(t => t.ClassificationId).IsRequired(true);
             builder.Property(t => t.UserId).IsRequired(true);
 
+            builder.HasIndex(t => t.Phone).HasName("idx_customer_phone");
+
             builder.HasOne(t => t.Gender);
             builder.HasOne(t => t.City);
             builder.HasOne(t => t.Region);
             builder.HasOne(t => t.Classification);
             builder.HasOne(t => t.User);
-
 
             builder.HasData(new Customer { Id = 1, Name = "Maurício", Phone = "(11) 95429999", GenderId = 1, CityId = 1, RegionId = 1, LastPurchase = new System.DateTime(2016, 9, 10), ClassificationId = 1, UserId = 3 });
             builder.HasData(new Customer { Id = 2, Name = "Carla", Phone = "(53) 94569999", GenderId = 2, CityId = 1, RegionId = 1, LastPurchase = new System.DateTime(2015, 10, 10), ClassificationId = 1, UserId = 2 });

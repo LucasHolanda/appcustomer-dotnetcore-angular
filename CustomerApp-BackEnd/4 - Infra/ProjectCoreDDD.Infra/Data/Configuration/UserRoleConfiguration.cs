@@ -11,7 +11,7 @@ namespace ProjectCoreDDD.Infra.Data.Configuration
             builder.ToTable("UserRole", "dbo").HasKey(t => t.Id);
 
             builder.Property(t => t.Id).IsRequired(true);
-            builder.Property(t => t.Name).IsRequired(true);
+            builder.Property(t => t.Name).HasMaxLength(20).IsRequired(true);
             builder.Property(t => t.IsAdmin).IsRequired(true);
 
             builder.HasData(new UserRole { Id = 1, Name = "Administrator", IsAdmin = true });

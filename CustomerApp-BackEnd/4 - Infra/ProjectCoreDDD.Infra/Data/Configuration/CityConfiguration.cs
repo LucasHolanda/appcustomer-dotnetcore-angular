@@ -11,7 +11,7 @@ namespace ProjectCoreDDD.Infra.Data.Configuration
             builder.ToTable("City", "dbo").HasKey(t => t.Id);
 
             builder.Property(t => t.Id).IsRequired(true);
-            builder.Property(t => t.Name).IsRequired(true);
+            builder.Property(t => t.Name).HasMaxLength(50).IsRequired(true);
             builder.Property(t => t.RegionId).IsRequired(true);
 
             builder.HasOne(t => t.Region);

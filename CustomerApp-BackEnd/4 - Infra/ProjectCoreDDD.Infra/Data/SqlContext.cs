@@ -2,9 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using ProjectCoreDDD.Domain.Entities;
 using System;
 using System.Linq;
-using System.Reflection;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace ProjectCoreDDD.Infra.Data
 {
@@ -22,7 +19,7 @@ namespace ProjectCoreDDD.Infra.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetAssembly(typeof(SqlContext)));
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(SqlContext).Assembly);
 
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
             {

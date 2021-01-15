@@ -11,7 +11,7 @@ namespace ProjectCoreDDD.Infra.Data.Configuration
             builder.ToTable("Gender", "dbo").HasKey(t => t.Id);
 
             builder.Property(t => t.Id).IsRequired(true);
-            builder.Property(t => t.Name).IsRequired(true);
+            builder.Property(t => t.Name).HasMaxLength(20).IsRequired(true);
 
             builder.HasData(new Gender { Id = 1, Name = "Masculine" });
             builder.HasData(new Gender { Id = 2, Name = "Feminine" });
