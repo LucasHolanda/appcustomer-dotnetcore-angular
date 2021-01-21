@@ -4,14 +4,14 @@ import { NgBrazilValidators } from 'ng-brazil';
 import { utilsBr } from 'js-brasil';
 import { Customer } from 'src/app/models/customer';
 import { AccountService } from 'src/app/account/shared/account.service';
-import { CustomerService } from '../../shared/customer.service';
+import { CustomerService } from '../shared/customer.service';
 import { UserSys } from 'src/app/models/user-sys';
 import { City } from 'src/app/models/city';
 import { Region } from 'src/app/models/region';
 import { Gender } from 'src/app/models/gender';
 import { Classification } from 'src/app/models/classification';
 import { CustomValidators } from 'ng2-validation';
-import { DisplayMessage, GenericValidator, ValidationMessages } from '../../shared/generic-form-validation';
+import { DisplayMessage, GenericValidator, ValidationMessages } from '../shared/generic-form-validation';
 import { fromEvent, merge, Observable } from 'rxjs';
 
 @Component({

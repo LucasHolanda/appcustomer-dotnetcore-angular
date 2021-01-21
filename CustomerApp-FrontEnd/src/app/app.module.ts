@@ -12,7 +12,7 @@ import { HomeComponent } from './layout/home/home.component';
 
 import { httpInterceptorProviders } from './http-interceptors';
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
-import { CustomerAddComponent } from './customer/customer-add/customer-add/customer-add.component';
+import { CustomerAddComponent } from './customer/customer-add/customer-add.component';
 import { NgBrazil, TextMask } from 'ng-brazil';
 import { CustomFormsModule } from 'ng2-validation';
 
