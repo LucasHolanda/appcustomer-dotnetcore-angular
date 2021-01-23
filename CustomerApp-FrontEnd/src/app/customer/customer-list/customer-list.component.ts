@@ -54,6 +54,10 @@ export class CustomerListComponent implements OnInit {
     this.reqFilter = {} as FilterCustomer;
   }
 
+  viewCustomer(event: Customer) {
+    console.log(event);
+  }
+
   getAll() {
     this.loadingCustomers = true;
     this.customerService.getAllInclude().subscribe(response => {

@@ -107,6 +107,7 @@
         <table class="table table-striped table-hover table-bordered">
           <thead class="">
             <tr>
+              <th scope="col"></th>
               <th scope="col">Classification</th>
               <th scope="col">Name</th>
               <th scope="col">Phone</th>
@@ -125,7 +126,7 @@
               <td colspan="10" style="padding: 15px;"><i class="fa fa-exclamation mr-1 fa-fw"></i>No customers were
                 found for this filter.</td>
             </tr>
-            <tr customer-item-list *ngFor="let cc of customers" [customer]="cc" [userRoleId]="user.userRoleId"></tr>
+            <tr customer-item-list (status)="viewCustomer($event)" *ngFor="let cc of customers" [customer]="cc" [userRoleId]="user.userRoleId"></tr>
           </tbody>
         </table>
       </div>

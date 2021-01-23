@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { Customer } from "src/app/models/customer";
 
 @Component({
@@ -11,4 +11,11 @@ export class CustomerItemListComponent {
     customer = Customer;
     @Input()
     userRoleId: number;
+
+    @Output()
+    status: EventEmitter<any> = new EventEmitter();
+
+    sendEvent() {
+        this.status.emit(this.customer);
+    }
 }
