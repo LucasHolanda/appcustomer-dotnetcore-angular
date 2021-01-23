@@ -126,7 +126,9 @@
               <td colspan="10" style="padding: 15px;"><i class="fa fa-exclamation mr-1 fa-fw"></i>No customers were
                 found for this filter.</td>
             </tr>
-            <tr customer-item-list (status)="viewCustomer($event)" *ngFor="let cc of customers" [customer]="cc" [userRoleId]="user.userRoleId"></tr>
+            <tr customer-item-list (status)="viewCustomer($event)" *ngFor="let cc of customers" [customer]="cc" [userRoleId]="user.userRoleId">
+              <span class="seller">{{cc.user.login}}</span>
+            </tr>
           </tbody>
         </table>
       </div>
