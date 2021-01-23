@@ -95,13 +95,15 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mr-3" [disabled]="isInvalidForm('form')">
+                <button type="submit" class="btn btn-primary pull-right" [disabled]="isInvalidForm('form')">
                     <i class="fa fa-search mr-1 fa-fw"></i>Save
                 </button>
-                <button type="button" class="btn btn-warning">
+                <button type="button" class="btn btn-warning mr-3 pull-right">
                     <i class="fa fa-eraser mr-1 fa-fw"></i>Clear Fields
                 </button>
-
+                <button [routerLink]="['/customer']" type="button" class="btn btn-light">
+                    <i class="fa fa-arrow-left mr-1 fa-fw"></i>Back
+                </button>
             </form>
         </div>
     </div>

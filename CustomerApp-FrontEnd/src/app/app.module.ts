@@ -10,7 +10,6 @@ import { AuthenticationComponent } from './layout/authentication/authentication.
 import { HomeComponent } from './layout/home/home.component';
 
 import { httpInterceptorProviders } from './http-interceptors';
-import { NgBrazil } from 'ng-brazil';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import { NgBrazil } from 'ng-brazil';
     BrowserModule,    
     HttpClientModule,
     FormsModule,
-    NgBrazil,
     AppRoutingModule
   ],
   providers: [

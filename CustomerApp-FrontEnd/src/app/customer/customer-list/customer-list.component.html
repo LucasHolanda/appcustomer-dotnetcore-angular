@@ -93,8 +93,8 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary mr-3"><i class="fa fa-search mr-1 fa-fw"></i>Search</button>
-        <button type="button" class="btn btn-warning" (click)="cleanForm(f)"><i
+        <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-search mr-1 fa-fw"></i>Search</button>
+        <button type="button" class="btn btn-warning mr-3 pull-right" (click)="cleanForm(f)"><i
             class="fa fa-eraser mr-1 fa-fw"></i>Clear Fields</button>
       </form>
     </div>
@@ -125,16 +125,7 @@
               <td colspan="10" style="padding: 15px;"><i class="fa fa-exclamation mr-1 fa-fw"></i>No customers were
                 found for this filter.</td>
             </tr>
-            <tr *ngFor="let cc of customers">
-              <td>{{cc.classification.name}}</td>
-              <td>{{cc.name}}</td>
-              <td>{{cc.phone}}</td>
-              <td>{{cc.gender.name}}</td>
-              <td>{{cc.city.name}}</td>
-              <td>{{cc.region.name}}</td>
-              <td>{{cc.lastPurchase | date: 'dd/MM/yyyy'}}</td>
-              <td *ngIf="user.userRoleId == 1">{{cc.user.login}}</td>
-            </tr>
+            <tr customer-item-list *ngFor="let cc of customers" [customer]="cc" [userRoleId]="user.userRoleId"></tr>
           </tbody>
         </table>
       </div>

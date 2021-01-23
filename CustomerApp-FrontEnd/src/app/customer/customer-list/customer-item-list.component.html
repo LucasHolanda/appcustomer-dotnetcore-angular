@@ -1,0 +1,8 @@
+<td>{{customer.classification.name}}</td>
+<td>{{customer.name}}</td>
+<td>{{customer.phone}}</td>
+<td>{{customer.gender.name}}</td>
+<td>{{customer.city.name}}</td>
+<td>{{customer.region.name}}</td>
+<td>{{customer.lastPurchase | date: 'dd/MM/yyyy'}}</td>
+<td *ngIf="userRoleId == 1">{{customer.user.login}}</td>
