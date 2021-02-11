@@ -23,9 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCoreDDD.Infra", "4 - Infra\ProjectCoreDDD.Infra\ProjectCoreDDD.Infra.csproj", "{8C54FD69-06D2-48D9-829C-05AFC6DFEE8A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCoreDDD.Infra.CrossCutting", "ProjectCoreDDD.Infra.CrossCutting\ProjectCoreDDD.Infra.CrossCutting.csproj", "{89397A6B-7D32-4910-92C0-2211221BDE32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCoreDDD.Infra.CrossCutting", "4 - Infra\ProjectCoreDDD.Infra.CrossCutting\ProjectCoreDDD.Infra.CrossCutting.csproj", "{89397A6B-7D32-4910-92C0-2211221BDE32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectCoreDDD.Domain.Tests", "ProjectCoreDDD.Domain.Tests\ProjectCoreDDD.Domain.Tests.csproj", "{8F928ACB-5F5E-4A71-AE74-87E4FCBDD790}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectCoreDDD.Domain.Tests", "3 - Domain\ProjectCoreDDD.Domain.Tests\ProjectCoreDDD.Domain.Tests.csproj", "{8F928ACB-5F5E-4A71-AE74-87E4FCBDD790}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
